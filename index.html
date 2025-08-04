@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>希臘文單字 Flip Cards</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>希臘文初階單字練習</h1>
+
+  <p class="subtitle">新約聖經中出現50次以上的單字</p>
+
+  <div class="main-container">
+    <div class="flip-card" id="flashcard">
+      <div class="flip-card-inner">
+        <div class="flip-card-front" id="cardFront"></div>
+        <div class="flip-card-back" id="cardBack"></div>
+      </div>
+    </div>
+    <div class="button-group">
+      <button id="markKnown">已記住</button>
+      <button id="nextButton">下一張</button>
+    </div>
+  </div>
+  <br>
+
+  <div class="grammar-buttons">
+    <button class="openGrammar" onclick="open_Word()">單字總表</button>
+    <button class="openGrammar" onclick="open_Article()">冠詞</button>
+    <button class="openGrammar" onclick="open_Noun()">名詞一二</button>
+    <button class="openGrammar" onclick="open_NounThree()">名詞三</button>
+    <button class="openGrammar" onclick="open_Pronoun()">代名詞</button>
+    <button class="openGrammar" onclick="open_Adj()">形容詞一二</button>
+    <button class="openGrammar" onclick="open_AdjThree()">形容詞三</button>
+    <button class="openGrammar" data-target="prep">介係詞</button>
+    <button class="openGrammar" data-target="prepPhase">介係詞片語</button>
+    <button class="openGrammar" data-target="conj">連接詞</button>
+    <button class="openGrammar" onclick="open_Indicative()">直述語氣</button>
+    <button class="openGrammar" onclick="open_Number()">數字表</button>
+    <button class="openGrammar" onclick="open_Anoigo()">詞形變化 ἀνοίγω</button>
+    <button class="openGrammar" onclick="open_Confusing()">易混淆的詞形</button>
+  </div>
+
+  <div id="prep" class="modal">
+   <div class="modal-content">
+     <span class="close">&times;</span>
+     <h2>介係詞</h2>
+     <img src="image/prep.png" alt="介係詞" style="width: 100%; max-width: 600px; display: block; margin: 0 auto;">
+   </div>
+  </div>
+
+  <div id="prepPhase" class="modal">
+   <div class="modal-content">
+     <span class="close">&times;</span>
+     <h2>介係詞片語</h2>
+     <img src="image/prepPhase.png" alt="介係詞片語" style="width: 100%; max-width: 600px; display: block; margin: 0 auto;">
+   </div>
+  </div>
+
+  <div id="conj" class="modal">
+   <div class="modal-content">
+     <span class="close">&times;</span>
+     <h2>連接詞</h2>
+     <img src="image/conj.png" alt="連接詞" style="width: 100%; max-width: 600px; display: block; margin: 0 auto;">
+   </div>
+  </div>
+
+
+
+
+
+
+
+   <!-- 文法表格 Modal 3 -->
+   <div id="grammarModal3" class="modal">
+     <div class="modal-content">
+       <span class="close">&times;</span>
+       <h2>冠詞變化表</h2>
+       <p>這裡將顯示冠詞變化表內容。</p>
+     </div>
+   </div>
+
+</body>
+
+<script src="database.js"></script>
+<script src="main.js"></script>
+<script src="link.js"></script>
+
+</html>
